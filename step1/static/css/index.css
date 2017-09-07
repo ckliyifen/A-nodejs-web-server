@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(222,222,222);
+    font-size: 15px;
+    font-family: 'yahei';
+}
+
+/*都需要一個reset樣式*/
+
+/*盡量用class而不是id CSS選擇器的寫法也要注意，有class盡量不要寫標簽*/
+header{
+    width: 100%;
+    height: 90px;
+    font-size: 12px;
+    background-color: rgb(51,51,51);
+}
+
+header h1 a{
+    float: left;
+    height: 90px;
+    width: 300px;
+    background: url(../img/bg.png) no-repeat left top;
+
+    white-space: nowrap;
+    text-indent: 1500px;
+    overflow: hidden;
+}
+/*
+header nav{
+    float: right;
+    height: 90px;
+}
+header nav ul.clearfix{
+    float: left;
+    line-height: 90px;
+}
+
+header nav ul li.item{
+    float: left;
+    margin-left: 20px;
+}
+header nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+header nav ul li:last-child a{
+    text-decoration: none;
+    color: rgb(140,140,140);
+    margin-right: 5px;
+}
+
+.clearfix{
+    zoom: 1;
+}
+.clearfix{
+    content: '';
+    display: block;
+    height: 0;
+    visibility: none;
+    clear: both;
+}
+*/
+header nav{
+    text-align: right;
+    height: 90px;
+}
+header nav ul{
+    line-height: 90px;
+}
+
+header nav ul li.item{
+    display: inline;
+    margin-left: 20px;
+    list-style: circle;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+header nav ul li:last-child a{
+    text-decoration: none;
+    color: rgb(140,140,140);
+    margin-right: 5px;
+}
+
+section,aside,div.images{
+    margin: 25px;
+    border-right: 2px solid #1b1b1b;
+    border-bottom: 2px solid #1b1b1b;
+    background-color: #fff;
+}
+
+section h1{
+    margin-left: 25px;
+    padding-top: 25px;
+    line-height: 35px;
+}
+section h2{
+    font-size: 15px;
+    margin-left: 25px;
+    color: rgb(222,222,222);
+    line-height: 40px;
+}
+section span{
+    font-size: 12px;
+    margin-left: 25px;
+    color: rgb(127,127,127);
+    line-height: 25px;
+}
+section p{
+    margin-left:25px;
+    font-size: 15px;
+    text-indent: 2em;
+    line-height: 25px;
+}
+section p a{
+    color: blue;
+}
+section img{
+    margin: 25px;
+    display: block;
+}
+.left{
+    margin-right:385px;
+}
+.section-two ul{
+    margin: 25px;
+    list-style-type: none;
+}
+.section-two ul li{
+    margin:10px;
+    padding-left: 20px;
+}
+
+.images h1{
+    margin:25px 0 25px 25px;
+    display: block;
+}
+.images img{
+    width: 100px;
+    height: 80px;
+}
+.images dl{
+    border: 1px solid red;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+}
+.images dl:last-child{
+    margin-bottom: 40px;
+}
+.images dl dt{
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.images dl dd{
+    margin: 10px;
+}
+
+.section-three ol{
+    margin: 10px 0 10px 80px;
+    font-size: 14px;
+}
+.section-three table{
+    width: 96%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 12px;
+
+    border-width: 1px;
+    border-color: rgb(204,204,204);
+    border-style: solid;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+.section-three table caption{
+    text-align: left;
+}
+.section-three table tr th{
+    color: #fff;
+    background-color: #1b1b1b;
+    padding: 5px;
+
+    border-width: 1px;
+    border-color: rgb(204,204,204);
+    border-style: solid;
+}
+.section-three table tr td{
+    border-width: 1px;
+    border-color: rgb(204,204,204);
+    border-style: solid;
+
+    padding: 5px;
+}
+.section-three table tr:last-child{
+    background-color: rgb(204,204,204);
+}
+.section-three table tr:last-child td{
+    color: #000;
+    font-weight: bold;
+}
+
+/*
+//采用背景圖片的形式添加分割綫 可以思考學習一下這種方法
+#formsection #headtitle{
+    font-size: 18px;
+    height: 50px;
+    margin: 0 25px 25px 25px;
+    padding-top: 30px;
+    background-image:linear-gradient(to bottom,#b7b7b7,#b7b7b7);
+    background-repeat:no-repeat;
+    background-position:left 10px; 
+    background-size:3px 40px;
+    vertical-align: middle;
+} 
+*/
+/*在這裏可以參考上面的分割綫效果，但這種邊框方法最簡單*/
+aside{
+    padding:15px;
+}
+aside h6{
+    border-left: 3px solid #b7b7b7;
+    padding: 10px;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.formsection{
+    width: 362px;
+    float: right;
+}
+aside form{
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+/*同意設置同樣的寬度，然後右對齊*/
+aside form div .tag{
+    font-size: 13px;
+    display: inline-block;
+    width: 40%;
+    text-align: right;
+    padding-right: 10px;
+}
+aside form input,aside form selection{
+    margin-bottom: 10px;
+}
+
+aside form p{
+    margin-left: 40%;
+    /*因爲有邊框所以沒法對齊*/
+    position: relative;
+    right: -3px;
+    margin-bottom: 10px;
+}
+input{
+    font-size: 13px;
+    padding:2px;
+}
+form div label.tab{
+    margin-right: 10px;
+    position: relative;
+    top: -2px;
+}
+
+form div select{
+    margin-bottom: 10px;
+}
+
+form textarea{
+    width: 55%;
+    height: 70px;
+    font-size: 16px;
+    vertical-align: top;
+    margin-bottom: 10px;
+}
+form button{
+    width: 96%;
+    height: 40px;
+    margin: 0 auto;
+    display: block;
+    background-color:rgb(51,85,208);
+    border:1px solid #878;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+/*不用設置寬高，設置padding就可以垂直居中了*/
+footer{
+    background-color: #000;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    padding:10px;
+}
+
