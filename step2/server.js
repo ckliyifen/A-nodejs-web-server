@@ -16,6 +16,7 @@ var route = {
     '/a/c':function(req,res){
         res.end('macth /a/c');
     },
+    //visit flow :localhost:8080/ -->input username password -->post action /seach
     '/search':function(req,res){
         res.end('username='+req.body.username+',password='+req.body.password);    
     }
